@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --slot-bg: rgb(25, 27, 31);
+    --slot-border: rgb(42, 42, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MainWindow {
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Bebas Neue';
+    font-weight: 200;
+    font-style: normal;
+}
+
+.window {
+    background-color: var(--slot-border);
+}
+
+.LeftPanel{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.RightPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.window > .header {
+    display: flex;
+    background-color: var(--slot-bg);
+    height: 2.1875rem; /* 35px */
+    width: 100%;
+    padding-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.375rem; /* 22px */
+    align-items: center;
+    padding-top: 0.1875rem; /* 3px */
+    position: relative;
+}
+
+.window > .header > .info {
+   margin-left: 0.4rem;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 0.3rem;
+
+}
+
+.nav-bar > .nav-item {
+    width: 23px;
+    height: 23px;
+    position: relative;
+    background-color: rgb(68, 124, 231);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.nav-bar > .nav-item > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+}
+
+.right {
+    display: flex;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    width: 68px;
+    height: 23px;
+    border-radius: 2px;
+    margin-left: 0.5rem;
+}
+
+.search-bar > .search-icon {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 54);
+    position: relative;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.search-bar > .search-icon > img {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar > input {
+
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 22px;
+    font-family: 'Bebas Neue';
+    font-weight: 200;
+    font-size: 0.8rem;
+    align-self: center;
+}
+
+.search-bar > input:focus {
+    outline: none;
+}
+
+.search-bar > input::placeholder {
+    color: rgba(245, 245, 245, 0.397);
+}
+
+.storage > .header {
+    font-size: 11px;
+    line-height: 11px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.storages {
+    padding: 10px 20px 10px 20px;
+}
+
+.storages .top, .bottom {
+    display: flex;
+}
+
+.storages .top {
+    margin-bottom: 0.7rem;
+}
+
+.top .storage, .bottom .storage {
+    min-width: 100px;
+    margin-right: 0.1rem;
+}
+
+
+
+.storage-container .row {
+    display: flex;
+}
+
+.slot:first-of-type {
+    border-left: 1px solid rgba(245, 245, 245, 0.514);
+}
+
+.storage-container .row:first-of-type .slot {
+    border-top: 1px solid rgba(245, 245, 245, 0.514);
+}
+
+.slot {
+    width: 2.1875rem !important;
+    height: 2.1875rem !important;
+    border-right: 1px solid rgba(245, 245, 245, 0.514);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.514);
+    background-color: var(--slot-bg);
+    box-sizing: border-box !important;
+}
+
+
+
+
+#bag .slot {
+    border: 2px solid var(--slot-border);
+}
+
+.storage-container {
+    background-color: var(--slot-border);
+}
+
+#bag .storage-container {
+    padding: 3px 10px 20px 10px;
+}
+

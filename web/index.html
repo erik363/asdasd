@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="MainWindow">
+        <div class="LeftPanel">
+            <div class="window">
+                <div class="header">
+                    <div class="title">Zsebek</div>
+                    <div class="info">2/30</div>
+                    <div class="right">
+                        <div class="nav-bar">
+                            <div class="nav-item" id="bag-nav">
+                                <img src="./icons/schoolbag.svg" />
+                            </div>
+                            <div class="nav-item" id="craft-nav">
+                                <img src="./icons/craft.svg" />
+                            </div>
+                            <div class="nav-item" id="clothes-nav">
+                                <img src="./icons/cloth.svg" />
+                            </div>
+                            <div class="nav-item" id="weapon-attachment-nav">
+                                <img src="./icons/pistol.svg" />
+                            </div>
+                            <div class="nav-item" id="health-nav">
+                                <img src="./icons/health.svg" />
+                            </div>
+                        </div>
+                        <div class="search-bar">
+                            <div class="search-icon">
+                                <img src="./icons/search.svg"/>
+                            </div>
+                            <input type="text" placeholder="" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="storages">
+                    <div class="top">
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Bal nadrágzseb</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Job nadrágzseb</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Mellény</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Bal kabátzseb</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Job kabátzseb</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storage">
+                            <div class="header">
+                                <div class="title">Speciális táska</div>
+                            </div>
+                            <div class="storage-container">
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                    <div class="slot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+               
+            </div>
+            <div class="window" id="bag">
+                <div class="header">
+                    <div class="title">Táska</div>
+                    <div class="info">2/30</div>
+                </div>
+                <div class="storage-container">
+                    <div class="row">
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                       <div class="slot"></div>
+                    </div>
+                    <div class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+                    <div class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                     </div>
+                     <div class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                     </div>
+                     <div class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="RightPanel">
+            <div class="window">
+                <div class="header">
+                    <div class="title">Csomagtartó</div>
+                    <div class="info">2/30</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!--script src="script.js"></script-->
+</body>
+
+</html>
